@@ -1,0 +1,169 @@
+<div class="container" style="font-family:Arial, Helvetica, sans-serif; color:#1f2937;">
+    <section class="row flex-column p-4 bg-light shadow" style="margin-bottom:50px; border-radius:20px;">
+        <div class="row flex-column mb-5 text-center">
+            <h3 style="color:#0E2D59; font-size:28px; font-family:system-ui; font-weight:700;">Custom Error Dialog</h3>
+            <div class="col-lg-9 col-11 mx-auto mt-3" style="font-size:16px; color:#555;">
+                Replace Odoo's default error popup titles with your own wording — configured from Settings, no code and no per-model patching.
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-10 col-11 text-center">
+                <div style="width:fit-content; margin:0 auto 14px; padding:4px 12px; color:#ffffff; background:#7048e8; border-radius:20px; font-size:12px; font-weight:700;">
+                    Backend UX
+                </div>
+                <h2 style="font-size:36px; color:#0E2D59;" class="font-weight-bold mb-4">
+                    Speak To Your Users In Your Own Words
+                </h2>
+            </div>
+        </div>
+
+        <div class="row no-gutters justify-content-center mb-4 px-3">
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-4 text-center bg-white shadow-sm" style="border-radius:8px;">
+                    <h4 style="color:#0E2D59; font-size:20px; font-weight:600;">Configure From Settings</h4>
+                    <p style="font-size:14px; color:#555;">Turn it on and set your titles in Settings. Changes apply on the next page load — no server restart, no developer.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-4 text-center bg-white shadow-sm" style="border-radius:8px;">
+                    <h4 style="color:#0E2D59; font-size:20px; font-weight:600;">Global Or Per-Type</h4>
+                    <p style="font-size:14px; color:#555;">One global title for every error dialog, or dedicated titles for Validation, Access, and User errors that override the global one.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-4 text-center bg-white shadow-sm" style="border-radius:8px;">
+                    <h4 style="color:#0E2D59; font-size:20px; font-weight:600;">Matches By Error Type</h4>
+                    <p style="font-size:14px; color:#555;">Targets the exception type (ValidationError, AccessError, UserError), not a translated label — so it keeps working in every language.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ VALIDATION ERROR ============ -->
+    <section class="row flex-column p-4 bg-light shadow" style="margin-bottom:40px; border-radius:20px;">
+        <div class="text-center mb-4">
+            <h2 style="font-size:30px; color:#0E2D59; font-weight:700;">Validation Error Title</h2>
+            <p style="font-size:15px; color:#555;">Shown whenever Odoo raises a Validation Error. Rename it to match your business language.</p>
+        </div>
+        <div class="row justify-content-center px-3">
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-3 bg-white shadow-sm" style="border-radius:8px;">
+                    <img src="validation_settings.png" class="img-fluid" style="border-radius:6px; border:1px solid #eee;" alt="Validation Error title setting"/>
+                    <p style="font-size:13px; color:#555; margin:12px 0 0; text-align:center;"><b>Step 1 — Settings:</b> type your Validation Error title.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-3 bg-white shadow-sm" style="border-radius:8px;">
+                    <img src="validation_before.png" class="img-fluid" style="border-radius:6px; border:1px solid #eee;" alt="Default Validation Error dialog"/>
+                    <p style="font-size:13px; color:#555; margin:12px 0 0; text-align:center;"><b>Before:</b> default Odoo title "Validation Error".</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-3 bg-white shadow-sm" style="border-radius:8px;">
+                    <img src="validation_after.png" class="img-fluid" style="border-radius:6px; border:1px solid #eee;" alt="Custom Validation Error dialog"/>
+                    <p style="font-size:13px; color:#555; margin:12px 0 0; text-align:center;"><b>After:</b> your own title on the popup.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ USER ERROR ============ -->
+    <section class="row flex-column p-4 bg-light shadow" style="margin-bottom:40px; border-radius:20px;">
+        <div class="text-center mb-4">
+            <h2 style="font-size:30px; color:#0E2D59; font-weight:700;">User Error Title</h2>
+            <p style="font-size:15px; color:#555;">Odoo shows "Invalid Operation" for User Errors. Replace it with a friendlier message.</p>
+        </div>
+        <div class="row justify-content-center px-3">
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-3 bg-white shadow-sm" style="border-radius:8px;">
+                    <img src="user_settings.png" class="img-fluid" style="border-radius:6px; border:1px solid #eee;" alt="User Error title setting"/>
+                    <p style="font-size:13px; color:#555; margin:12px 0 0; text-align:center;"><b>Step 1 — Settings:</b> type your User Error title.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-3 bg-white shadow-sm" style="border-radius:8px;">
+                    <img src="user_before.png" class="img-fluid" style="border-radius:6px; border:1px solid #eee;" alt="Default User Error dialog"/>
+                    <p style="font-size:13px; color:#555; margin:12px 0 0; text-align:center;"><b>Before:</b> default Odoo title "Invalid Operation".</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-3 bg-white shadow-sm" style="border-radius:8px;">
+                    <img src="user_after.png" class="img-fluid" style="border-radius:6px; border:1px solid #eee;" alt="Custom User Error dialog"/>
+                    <p style="font-size:13px; color:#555; margin:12px 0 0; text-align:center;"><b>After:</b> your own title on the popup.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ACCESS ERROR ============ -->
+    <section class="row flex-column p-4 bg-light shadow" style="margin-bottom:40px; border-radius:20px;">
+        <div class="text-center mb-4">
+            <h2 style="font-size:30px; color:#0E2D59; font-weight:700;">Access Error Title</h2>
+            <p style="font-size:15px; color:#555;">Shown when a record rule or access right blocks the user. Reword it to guide them.</p>
+        </div>
+        <div class="row justify-content-center px-3">
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-3 bg-white shadow-sm" style="border-radius:8px;">
+                    <img src="access_settings.png" class="img-fluid" style="border-radius:6px; border:1px solid #eee;" alt="Access Error title setting"/>
+                    <p style="font-size:13px; color:#555; margin:12px 0 0; text-align:center;"><b>Step 1 — Settings:</b> type your Access Error title.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-3 bg-white shadow-sm" style="border-radius:8px;">
+                    <img src="access_before.png" class="img-fluid" style="border-radius:6px; border:1px solid #eee;" alt="Default Access Error dialog"/>
+                    <p style="font-size:13px; color:#555; margin:12px 0 0; text-align:center;"><b>Before:</b> default Odoo title "Access Error".</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-3 bg-white shadow-sm" style="border-radius:8px;">
+                    <img src="access_after.png" class="img-fluid" style="border-radius:6px; border:1px solid #eee;" alt="Custom Access Error dialog"/>
+                    <p style="font-size:13px; color:#555; margin:12px 0 0; text-align:center;"><b>After:</b> your own title on the popup.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ GLOBAL TITLE ============ -->
+    <section class="row flex-column p-4 bg-light shadow" style="margin-bottom:40px; border-radius:20px;">
+        <div class="text-center mb-4">
+            <h2 style="font-size:30px; color:#0E2D59; font-weight:700;">Global Title (All Error Dialogs)</h2>
+            <p style="font-size:15px; color:#555;">Set one title that applies to every error type at once. Per-type titles above still take priority when filled.</p>
+        </div>
+        <div class="row justify-content-center px-3">
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-3 bg-white shadow-sm" style="border-radius:8px;">
+                    <img src="global_settings.png" class="img-fluid" style="border-radius:6px; border:1px solid #eee;" alt="Global title setting"/>
+                    <p style="font-size:13px; color:#555; margin:12px 0 0; text-align:center;"><b>Step 1 — Settings:</b> set one Global title for all dialogs.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-3 bg-white shadow-sm" style="border-radius:8px;">
+                    <img src="global_before.png" class="img-fluid" style="border-radius:6px; border:1px solid #eee;" alt="Default error dialog"/>
+                    <p style="font-size:13px; color:#555; margin:12px 0 0; text-align:center;"><b>Before:</b> default Odoo title (e.g. "Missing Record").</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 p-2">
+                <div class="h-100 p-3 bg-white shadow-sm" style="border-radius:8px;">
+                    <img src="global_after.png" class="img-fluid" style="border-radius:6px; border:1px solid #eee;" alt="Custom global error dialog"/>
+                    <p style="font-size:13px; color:#555; margin:12px 0 0; text-align:center;"><b>After:</b> your global title covers dialogs without a per-type override.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row flex-column p-4 bg-light shadow" style="margin-bottom:50px; border-radius:20px;">
+        <div class="row justify-content-center px-3">
+            <div class="col-lg-10 col-12">
+                <div class="p-4 bg-white shadow-sm" style="border-radius:8px; border-left:4px solid #7048e8;">
+                    <h4 style="color:#0E2D59; font-size:21px; font-weight:700; margin-bottom:12px;">Safe And Lightweight</h4>
+                    <p style="font-size:14px; line-height:1.8; color:#555; margin-bottom:0;">
+                        When the feature is disabled, no patch is applied and Odoo behaves exactly as before.
+                        The title is resolved cleanly inside the standard error dialog components, so tracebacks,
+                        copy-to-clipboard, and technical details all keep working.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
