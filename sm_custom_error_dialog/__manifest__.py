@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Custom Error Dialog",
-    "version": "18.0.1.0.0",
+    "version": "19.0.1.0.0",
     "category": "Productivity",
     "summary": "Rename Odoo error dialog titles (Validation, Access, User, and all errors) from Settings",
     "description": """
@@ -32,6 +32,7 @@ Features
         ],
     },
     "images": [
+        "static/description/banner.gif",
         "static/description/icon.png",
     ],
     "installable": True,
